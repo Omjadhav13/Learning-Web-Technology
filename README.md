@@ -1,1 +1,1 @@
-# Learning Web Technolog #
+# Learning Web Technology #
