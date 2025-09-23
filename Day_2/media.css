@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.cla{
+    border: 5px solid red;
+    width: 20%;
+    float: left;
+}
+@media screen and (max-width: 992px){
+    .cla{
+        border: 5px solid blue;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .cla{
+        border: 5px solid green;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .cla{
+        border: 5px solid orange;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 300px){
+    .cla{
+        border: 5px solid purple;
+        width: 100%;
+    }
+}

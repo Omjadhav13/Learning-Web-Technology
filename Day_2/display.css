@@ -1,0 +1,38 @@
+.parent{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px grey;
+}
+.mytitle{
+    font-size: 40px;
+    font-weight: 700;
+    color : darkblue;
+    text-shadow: 2px 2px 5px grey;
+    margin: 0px 5px;
+}
+header{
+    background-color: lightgrey;
+    border-bottom: 5px solid grey;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.child{
+       border: 2px solid blue;
+    height: 100px;
+    width: 200px;
+    clear: left;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: beige;
+ 
+}

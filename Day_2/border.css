@@ -3,4 +3,11 @@
     BACKGROUND-COLOR: skyblue;
     TEXT-ALIGN: CENTER;
 }
+.border-prop{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    border: 10px solid red;
+    border-radius: 24px;
+}
 
