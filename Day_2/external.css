@@ -1,0 +1,8 @@
+body{
+    background-color: lightblue;
+}
+p{
+    color: rgb(230, 104, 104);
+    font-size: 20px;
+    text-transform: uppercase;
+}
