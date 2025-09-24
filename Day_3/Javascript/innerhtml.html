@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner HTML</title>
+</head>
+<body>
+    <h2 id="d1"></h2>
+    <h2 id="d2">Hello</h2>
+    <h2 id="d3">Changes colour</h2>
+    <img id ="d4" src="../../assets/images/img1.jpg" alt="">
+    <button type="button" onclick="Changeimg()">Change colour</button>
+    <script>
+        function Changeimg(){
+            document.getElementById("d4").src="../../assets/images/img2.jpg";
+            document.getElementById("d3").style.backgroundColor="yellow";
+        }
+        document.getElementById("d1").innerHTML="this is inner HTML one";
+      
+        let data=document.getElementById("d2")  //.innerHTML="World Hello";
+        console.log(data);
+        document.getElementById("d3").style.color="red";
+        
+
+    </script>
+    
+</body>
+</html>
