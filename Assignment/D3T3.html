@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+        }
+
+        .box {
+            border: 2px soild aqua;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imgs">
+            <img id="set" src="../assets/images/img2.jpg" alt="" width="50%" height="50%">
+        </div>
+        <br><br>
+        <h2 id="res"></h2>
+        <br><br>
+        <button type="button" onclick="change1()">Change</button>
+    </div>
+
+    <script>
+        const ind = 0;
+        const arr = [
+            { src: "../assets/images/adv.jpg", text: "Mountains" },
+            { src: "../assets/images/check.jpg", text: "Nature" },
+            { src: "../assets/images/adv.jpg", text: "Water" }
+        ];
+
+        function change1() {
+            if (ind > 2) {
+                ind = 0;
+            }
+            document.getElementById("set").src = arr[ind].src;
+            document.getElementById("res").innerHTML = arr[ind].text;
+            ind++;
+        }
+    </script>
+</body>
+</html>
