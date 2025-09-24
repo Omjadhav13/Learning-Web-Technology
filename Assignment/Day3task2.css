@@ -1,0 +1,14 @@
+.tables{
+    justify-content: center;
+    margin-top:50px;
+    margin: auto;
+    display: block;
+}
+.tab{
+    width: 300px;
+    height: 300px;
+
+}
+td{
+    text-align: center;
+}
