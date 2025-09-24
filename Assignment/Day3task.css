@@ -1,0 +1,17 @@
+.myform{
+           border: 2px solid red;
+    text-align: center;
+    padding: 19px;
+    background-color: beige;
+    border-radius: 5px;
+    margin-top: 100px;
+    width: 196px;
+    margin: auto;
+    margin-top: 50px;
+}
+.myform input {
+        margin: 8px;
+    text-align: unset;
+    height: 20px;
+    width: 167px;
+}
