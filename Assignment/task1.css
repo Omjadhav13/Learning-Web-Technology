@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+    background-image: url("../assets/images/img1.jpg");
+    background-blend-mode:soft-light;
+    
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    width: max-content;
+    border-radius: 22px;
+}
+label{
+    text-align: left;
+}
+input{
+    width: 100%;
+}
+option
+{
+    text-align: center;
+    
+}
