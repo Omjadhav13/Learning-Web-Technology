@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp=[
+        {id :101,name:"om",post:"Manager",salary:70000,gender:"Male",age:22,state:"Maharashtra",blood:"A+"},
+        {id :102,name:"Amaan",post:"Team Lead",salary:60000,gender:"Male",age:23,state:"Maharashtra",blood:"B+"},
+        {id :103,name:"Shreyas",post:"Developer",salary:80000,gender:"Male",age:21,state:"Maharashtra",blood:"O-"},
+        {id :104,name:"Sumit",post:"HR",salary:50000,gender:"Male",age:60,state:"Maharashtra",blood:"O+"},
+        {id :105,name:"Abhay",post:"Manager",salary:30000,gender:"Male",age:25,state:"UP",blood:"A-"},
+        {id :106,name:"Sayali",post:"Account",salary:20000,gender:"Female",age:21,state:"MP",blood:"A+"},
+        {id :107,name:"Nisha",post:"HR",salary:30000,gender:"Female",age:59,state:"Maharashtra",blood:"B+"},
+        {id :108,name:"Aditi",post:"Tester",salary:40000,gender:"Female",age:21,state:"Assam",blood:"O+"},
+        {id :109,name:"Sneha",post:"Tester",salary:25000,gender:"female",age:19,state:"Goa",blood:"B-"},
+        {id :110,name:"Bhakti",post:"Manager",salary:40000,gender:"Female",age:25,state:"Maharashtra",blood:"B+"}
+    
+    ];
+    
+    function display(n){
+            document.write( "Id:"+ emp[n].id+" name: "+emp[n].name+" post : "+emp[n].post+" salary : "+emp[n].salary+" Gender: "+emp[n].gender," Age: "+emp[n].age," State: "+emp[n].state," Blood group: "+emp[n].blood +'<br>');
+            // doucment.write('<br>');
+        
+    }
+    for(let i=0;i<emp.length;i++){
+        display(i);
+    }
+     document.write('<br>');
+    for(let arr in emp){
+            if(emp[arr].gender=="Female"){
+                display(arr);
+            }
+        }
+     document.write('<br>');
+     for(let arr in emp){
+            if(emp[arr].salary>30000 && emp[arr].salary<70000){
+                display(arr);
+            }
+        }
+         document.write('<br>');
+     for(let arr in emp){
+            if(emp[arr].post=="Manager" || emp[arr].post =="HR"){
+                display(arr);
+            }
+        }
+         document.write('<br>');
+     for(let arr in emp){
+            if(emp[arr].age>55){
+                display(arr);
+            }
+        }
+         document.write('<br>');
+     for(let arr in emp){
+            if(emp[arr].blood=="O+"){
+                display(arr);
+            }
+        }
+    </script>
+</body>
+</html>
