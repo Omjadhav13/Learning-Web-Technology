@@ -2,7 +2,11 @@
     justify-content: center;
     margin-top:50px;
     margin: auto;
+    width: 300px;
     display: block;
+    border: 2px solid rebeccapurple;
+    text-align: center;
+    padding: 10px;
 }
 .tab{
     width: 300px;
