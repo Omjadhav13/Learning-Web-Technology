@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp={
+            id :101,name:"om",contact:21212121,pin:123,state:"Maharashtra",
+            address:{city:"Mumbai" ,state:"Maharashtra",country :"India"},
+            details:function(){
+                return `Id:${this.id},Name:${this.name},contact: ${this.contact},State:${this.state}`;
+            }    
+
+        };
+        // for(let a in emp){
+        //     document.writeln(emp[a]);
+        // }
+        document.write(emp.details());
+        
+    </script>
+</body>
+</html>
