@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="customer">
+            <label for="">Enter your item name</label>
+            <br>
+            <input type="text" id="data" name="" >
+            <br>
+            <button type="submit" onclick="onAdd()">Add item Name</button>
+            <br><br>
+            <button type="submit" onclick="onDisplay()">Display Complete Item List</button>
+        </div>
+        <div class="display">
+            
+        </div>
+    </div>
+    <script>
+        function onAdd(){
+            
+            let d=document.getElementById("data").value.trim();
+            const arr ={};
+            for(let i in arr){
+                arr[i]=d;             
+            }
+        }
+    </script>
+</body>
+</html>

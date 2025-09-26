@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        td{
+            border :1px solid black;
+        }
+        th{
+            border :2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <table id="tab">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Post</th>
+                <th>Salary</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>State</th>
+                <th>Blood</th>
+            </tr>
+            
+        </table>
+    </div>
+     <script>
+        let emp=[
+        {id :101,name:"om",post:"Manager",salary:70000,gender:"Male",age:22,state:"Maharashtra",blood:"A+"},
+        {id :102,name:"Amaan",post:"Team Lead",salary:60000,gender:"Male",age:23,state:"Maharashtra",blood:"B+"},
+        {id :103,name:"Shreyas",post:"Developer",salary:80000,gender:"Male",age:21,state:"Maharashtra",blood:"O-"},
+        {id :104,name:"Sumit",post:"HR",salary:50000,gender:"Male",age:60,state:"Maharashtra",blood:"O+"},
+        {id :105,name:"Abhay",post:"Manager",salary:30000,gender:"Male",age:25,state:"UP",blood:"A-"},
+        {id :106,name:"Sayali",post:"Account",salary:20000,gender:"Female",age:21,state:"MP",blood:"A+"},
+        {id :107,name:"Nisha",post:"HR",salary:30000,gender:"Female",age:59,state:"Maharashtra",blood:"B+"},
+        {id :108,name:"Aditi",post:"Tester",salary:40000,gender:"Female",age:21,state:"Assam",blood:"O+"},
+        {id :109,name:"Sneha",post:"Tester",salary:25000,gender:"female",age:19,state:"Goa",blood:"B-"},
+        {id :110,name:"Bhakti",post:"Manager",salary:40000,gender:"Female",age:25,state:"Maharashtra",blood:"B+"}
+    
+    ];
+        let datas=document.getElementById("tab");
+        for(let i in emp){
+            let rows=document.createElement("tr");
+            rows.innerHTML=` <td>${emp[i].id}</td>
+                <td>${emp[i].name}</td>
+                <td>${emp[i].post}</td>
+                <td>${emp[i].salary}</td>
+                <td>${emp[i].gender}</td>
+                <td>${emp[i].age}</td>
+                <td>${emp[i].state}</td>
+                <td>${emp[i].blood}</td>
+                `;
+                datas.append(rows);
+        }
+    </script>
+</body>
+
+</html>
