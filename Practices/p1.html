@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            border: 2px solid red;
+            border-radius: 5px;
+             width: 50%;
+            height: auto;
+            text-align: center;
+            padding: 2%;
+        }
+        body{
+            justify-content: center;
+            display: flex;
+            margin: 5%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <div class="d1">
+            <label>Enter your text</label>
+            <input id="t" type="text" >
+            <br> <br>
+            <label>Enter character to replace</label>
+            <input id="t2" type="text" >
+            <br> <br>
+            <label>Enter character to replace with</label>
+            <input id="t3" type="text" >
+        </div>
+        <br>
+        <div class="d2">
+            <button type="button" onclick="replace()">Replace</button>
+            <br><br>
+            <button type="button" onclick="Replaceall()">Replace All</button>
+        </div>
+    </div>
+    <script>
+        function replace(){
+            let c=document.getElementById("t").value;
+            let change=document.getElementById("t2").value;
+            let changes=document.getElementById("t3").value;
+            
+           let result=c.replace(change,changes);
+            document.getElementById("t").value=result;
+        }
+        function Replaceall(){
+            let c=document.getElementById("t").value;
+            let change=document.getElementById("t2").value;
+            let changes=document.getElementById("t3").value;
+            
+           let result=c.replace(change,changes);
+            document.getElementById("t").value=result;
+        }
+    </script>
+</body>
+</html>
