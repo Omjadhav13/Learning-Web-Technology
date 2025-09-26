@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp={
+            id:101,name:"om",post:"CEO",address:"Mumbai"
+        }
+        const empid=emp.id;
+        const empName=emp.name;
+        const empPost=emp.post;
+        const empaddress=emp.address;
+        document.write(empid,empName,empPost,empaddress);
+        document.write('<br>');
+        //desturturing of object data
+        const {id,name,post,addresss}=emp;
+        document.write(id,name,post,addresss);
+    </script>
+</body>
+</html>
