@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <style>
+        #cls1{
+            border: 2px solid black;
+            transition: transform 2s;
+        }
+    </style>
 </head>
 <body>
     <video src="../../assets/video/play1.mp4" controls width="300px" height="200px" id="v1"></video><br><br>
     <button type="button" id="btnhide">Hide</button>&nbsp;&nbsp; &nbsp;
     <button type="button" id="btnshow">Show</button>
-    
+    <br><br>
+    <div>
+        <h1>Hover Here</h1>
+    </div>
+
+        <img id="cls1" src="../../assets/images/adv.jpg" alt="" width="500px" height="300px">
+
     <script>
         $(document).ready(function(){
             $('#btnhide').click(function(){
@@ -19,6 +30,18 @@
             })
              $('#btnshow').click(function(){
                 $('#v1').show();
+            })
+            $('h1').mouseenter(function(){
+                $(this).css({"color":"red"});
+            })
+            $('h1').mouseleave(function(){
+                $(this).css({"color":"black"});
+            })
+            $('#cls1').mouseenter(function(){
+                $(this).css({'transform':'rotateX(360deg)'})
+            })
+            $('#cls1').mouseleave(function(){
+                $(this).css({'transform':'rotateY(360deg)'})
             })
         })
     </script>
