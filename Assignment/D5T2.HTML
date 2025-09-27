@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="content">
+    <div class="content" style="display: flex;">
         <div class="customer">
             <label for="">Enter your item name</label>
             <br>
@@ -16,17 +16,28 @@
             <br><br>
             <button type="submit" onclick="onDisplay()">Display Complete Item List</button>
         </div>
-        <div class="display">
-            
+        <div id="d1" class="display">
+           
         </div>
     </div>
     <script>
+        const arr =[];
         function onAdd(){
-            
             let d=document.getElementById("data").value.trim();
-            const arr ={};
+            
+            arr.push(d);   
+            d.value = '';   
+        }
+        let display=document.getElementById("d1");
+        function onDisplay(){
             for(let i in arr){
-                arr[i]=d;             
+                let result=document.createElement("h4");
+                result.innerText=arr[i];
+                document.innerHTML=("Item");
+                display.append(result);
+                let but=document.createElement("button");
+                display.append(but);
+
             }
         }
     </script>
