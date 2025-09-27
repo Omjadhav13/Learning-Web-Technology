@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #cls1{
+            border: 2px solid black;
+            transition: transform 2s;
+        }
+    </style>
+</head>
+<body>
+    <video src="../../assets/video/play1.mp4" controls width="300px" height="200px" id="v1"></video><br><br>
+    <button type="button" id="btnhide">Hide</button>&nbsp;&nbsp; &nbsp;
+    <button type="button" id="btnshow">Show</button>
+    <br><br>
+    <div>
+        <h1>Hover Here</h1>
+    </div>
+
+        <img id="cls1" src="../../assets/images/adv.jpg" alt="" width="500px" height="300px">
+        <br><br>
+        <img id="img1" src="../../assets/images/html.jpg" alt="" width="500px" height="300px"><br><br>
+        <button type="button" id="tog">Toggle</button>
+        <br><br>
+        <button type="button" id="up">Slide up</button>
+        <button type="button" id="down">Slide down</button>
+        <button type="button" id="togle">Toggle</button>
+        <br><br>
+
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo voluptas molestias adipisci! Possimus repellendus sed neque ab. Sapiente a fuga rerum in impedit enim, itaque dicta aspernatur non totam tempore ipsam pariatur. Dolore tempore dolorem aperiam voluptatum vero ducimus maiores. Natus, dolore fuga quia tempora sit iure eos voluptates?</p>
+        
+    <script>
+        $(document).ready(function(){
+            $('#btnhide').click(function(){
+                $('#v1').hide();
+            })
+             $('#btnshow').click(function(){
+                $('#v1').show();
+            })
+            $('h1').mouseenter(function(){
+                $(this).css({"color":"red"});
+            })
+            $('h1').mouseleave(function(){
+                $(this).css({"color":"black"});
+            })
+            $('#cls1').mouseenter(function(){
+                $(this).css({'transform':'rotateX(360deg)'})
+            })
+            $('#cls1').mouseleave(function(){
+                $(this).css({'transform':'rotateY(360deg)'})
+            })
+            $('#tog').click(function(){
+                $('#img1').toggle(3000);
+            })
+            $('#up').click(function(){
+                $('#p1').slideUp(200);
+            })
+            $('#down').click(function(){
+                $('#p1').slideDown(200);
+            })
+            $('#togle').click(function(){
+                $('#p1').toggle(2000);
+            })
+        })
+    </script>
+</body>
+</html>
