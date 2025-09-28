@@ -101,6 +101,7 @@
       "eaddress": "Bangalore",
       "ecompany": "Capgemini",
       "id": "9"
+<<<<<<< HEAD
     },
     {
       "id": "a4a8",
@@ -274,4 +275,15 @@
       "cpassword": "test"
     }
   ]
+=======
+    }
+  ],
+ "login":[
+  { "id": 1, "username": "om13", "password": "Titanic1314" },
+  { "id": 2, "username": "amaan", "password": "password1" },
+  { "id": 3, "username": "shreyas", "password": "password2" }
+]
+
+
+>>>>>>> 456625dd6417b04bb5556fe6b0f270bc161f6ae8
 }

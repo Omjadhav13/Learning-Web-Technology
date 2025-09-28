@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,4 +77,82 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .container{
+            width: 50rem;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container m-5  p-3 ">
+
+        <div>
+            <label>Sign In</label>
+        </div>
+
+        <div>
+            <label>Enter user name</label><br>
+            <input class="same" type="text" id="names" placeholder="username" required>
+        </div>
+
+        <div>
+            <label>Enter password</label><br>
+            <input class="same" type="text" id="pass" placeholder="password" required>
+        </div>
+
+        <div>
+            <button class="same" type="button" onclick="sub()">Sign in</button>
+        </div>
+
+    </div>
+    <script>
+        function sub() {
+            let va = document.getElementById("names").value;
+            let ps = document.getElementById("pass").value;
+
+            let ob = new XMLHttpRequest();
+            
+            ob.onload = function () {
+                
+            let prod=JSON.parse(this.responseText);
+             let a=0;
+                for(let c of prod){
+                  
+
+                   if(va===c.username && ps===c.password){
+                    a=1;
+                    break;
+                   }
+                   else{
+                    window.alert("invalid uername pass");
+                   }
+                   if(a==1){
+                     window.location.href="http://hematitecorp.com/";
+                   }
+                }                
+            };
+            ob.open("Get", `http://localhost:8888/login`,true);
+            ob.send(ob);
+        }
+    </script>
+</body>
+
+>>>>>>> 456625dd6417b04bb5556fe6b0f270bc161f6ae8
 </html>

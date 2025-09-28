@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">
+            This is para-1
+        </p>
+        <p id="p2">
+            This is para -2
+        </p>
+        <ul id="d2"></ul>
+    </div>
+    <script>
+        let param1=document.getElementById("d1");
+        console.log(param1);
+        let newparam=document.createElement("p");
+        console.log(newparam);
+        // how to insert data inside new element 
+        newparam.setAttribute("id","p3");
+        //how to insert data inside new element
+        newparam.innerText="This is para-3";
+        
+        param1.appendChild(newparam);
+
+        let courses=["htmnl","css","JS","PHP"];
+        let set=document.getElementById("d2");
+        for(let c of courses){
+            let newl=document.createElement("li");
+            newl.innerText=c;
+            set.appendChild(newl);
+        }
+    </script>
+</body>
+</html>
