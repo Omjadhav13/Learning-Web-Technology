@@ -1,0 +1,277 @@
+{
+  "products": [
+    {
+      "pname": "Gamming Laptop",
+      "pprice": "900000",
+      "company": "Lenovo",
+      "quantity": "10",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "pname": "Mouse",
+      "pprice": 2000,
+      "company": "Iball",
+      "quantity": 30
+    },
+    {
+      "pname": "Mobile",
+      "pprice": "100000",
+      "company": "Apple",
+      "quantity": "1",
+      "id": "5"
+    },
+    {
+      "id": "8198",
+      "pname": "Watch",
+      "pprice": "30000",
+      "company": "Apple",
+      "quantity": "10"
+    }
+  ],
+  "employe": [
+    {
+      "id": "1",
+      "ename": "Panchashil",
+      "epost": "Developer",
+      "esalary": 55000,
+      "eaddress": "Pune",
+      "ecompany": "Hematite"
+    },
+    {
+      "id": "3",
+      "ename": "Amaan",
+      "epost": "Developer",
+      "esalary": 55000,
+      "eaddress": "Pune",
+      "ecompany": "Hematite"
+    },
+    {
+      "id": "3",
+      "ename": "Sumit",
+      "epost": "Tester",
+      "esalary": 48000,
+      "eaddress": "Bangalore",
+      "ecompany": "Infosys"
+    },
+    {
+      "id": "4",
+      "ename": "Abhay",
+      "epost": "Designer",
+      "esalary": 52000,
+      "eaddress": "Chennai",
+      "ecompany": "TCS"
+    },
+    {
+      "id": "5",
+      "ename": "Ajit",
+      "epost": "Developer",
+      "esalary": 60000,
+      "eaddress": "Hyderabad",
+      "ecompany": "Wipro"
+    },
+    {
+      "id": "6",
+      "ename": "Pratik",
+      "epost": "Analyst",
+      "esalary": 58000,
+      "eaddress": "Delhi",
+      "ecompany": "Accenture"
+    },
+    {
+      "id": "7",
+      "ename": "Kiran",
+      "epost": "Developer",
+      "esalary": 57000,
+      "eaddress": "Pune",
+      "ecompany": "IBM"
+    },
+    {
+      "id": "8",
+      "ename": "Neha",
+      "epost": "HR",
+      "esalary": 45000,
+      "eaddress": "Mumbai",
+      "ecompany": "Cognizant"
+    },
+    {
+      "ename": "test",
+      "epost": "Manager",
+      "esalary": "72000",
+      "eaddress": "Bangalore",
+      "ecompany": "Capgemini",
+      "id": "9"
+    },
+    {
+      "id": "a4a8",
+      "firstname": "qwdqwq",
+      "lastname": "wfqwf",
+      "Uemail": "abc@gmail.com",
+      "password": "AREHREewfgawAEWA",
+      "cpassword": "AREHREewfgawAEWA"
+    },
+    {
+      "id": "ce22",
+      "firstname": "qwefew",
+      "lastname": "wefgWE",
+      "Uemail": "abc@gmail.co",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    },
+    {
+      "id": "639b",
+      "firstname": "qwefewaf",
+      "lastname": "wefgWEafe",
+      "Uemail": "abc@gmail.com",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    },
+    {
+      "id": "32f5",
+      "firstname": "qwefewv",
+      "lastname": "wefgWE",
+      "Uemail": "abc@gmail.com",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "username": "om13",
+      "password": "Titanic1314"
+    },
+    {
+      "id": 2,
+      "username": "amaan",
+      "password": "password1"
+    },
+    {
+      "id": 3,
+      "username": "shreyas",
+      "password": "password2"
+    }
+  ],
+  "Register": [
+    {
+      "id": null,
+      "firstname": null,
+      "lastname": null,
+      "Uemail": null,
+      "pass": null,
+      "cpass": null
+    },
+    {
+      "id": "fa57",
+      "firstname": "qwefew",
+      "lastname": "wefgWE",
+      "Uemail": "abc@gmail.com",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    },
+    {
+      "id": "3761",
+      "firstname": "qwefew",
+      "lastname": "wefgWE",
+      "Uemail": "abc@gmail.co",
+      "password": "Titanic1314",
+      "cpassword": "taitanic"
+    },
+    {
+      "id": "2e32",
+      "firstname": "om",
+      "lastname": "jadhav",
+      "Uemail": "abc@gmailcom",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    },
+    {
+      "id": "81d8",
+      "firstname": "Sr",
+      "lastname": "Number",
+      "Uemail": "abc@gmailcom",
+      "password": "Titanic1314",
+      "cpassword": "Titanic1314"
+    },
+    {
+      "id": "f16a",
+      "firstname": "Sr.",
+      "lastname": "Number",
+      "Uemail": "abc@gmailcom",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "f93e",
+      "firstname": "test",
+      "lastname": "test",
+      "Uemail": "test@gmail.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "759f",
+      "firstname": "test1",
+      "lastname": "test1",
+      "Uemail": "test1@gmao.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "c811",
+      "firstname": "ets",
+      "lastname": "test",
+      "Uemail": "est@gmail.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "4b97",
+      "firstname": "test",
+      "lastname": "test",
+      "Uemail": "test@gmailo.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "e804",
+      "firstname": "test1",
+      "lastname": "ytest",
+      "Uemail": "abc@gmailcom",
+      "password": "test1",
+      "cpassword": "test1"
+    },
+    {
+      "id": "c208",
+      "firstname": "test1",
+      "lastname": "test1",
+      "Uemail": "test@gmailo.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "2099",
+      "firstname": "om",
+      "lastname": "test",
+      "Uemail": "test@gmailo.com",
+      "password": "test",
+      "cpassword": "test"
+    },
+    {
+      "id": "fc31",
+      "firstname": "om1",
+      "lastname": "om",
+      "Uemail": "test@gmailo.com",
+      "password": "om1",
+      "cpassword": "om1"
+    },
+    {
+      "id": "550c",
+      "firstname": "test",
+      "lastname": "test",
+      "Uemail": "test@gmailo.com",
+      "password": "test",
+      "cpassword": "test"
+    }
+  ]
+}
