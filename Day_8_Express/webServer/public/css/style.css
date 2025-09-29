@@ -1,0 +1,13 @@
+.myheading{
+    color: rebeccapurple;
+    text-align: center;
+    background-color: aqua;
+    text-decoration: underline;
+}
+.my-info{
+    color: aquamarine;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: blanchedalmond;
+}
