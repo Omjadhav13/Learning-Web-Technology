@@ -6,6 +6,7 @@ import FuncName from './component/Funcname';
 import MyMethod from './component/MyMethod';
 import ClassName from './component/ClassName';
 import StateCompo from './component/StateCompo';
+import ConditionalRunComp from './component/ConditionalRunComp';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
       <ClassName sname="om" post="Chairman"/>
       <MyMethod/>
       <StateCompo/>
+      <ConditionalRunComp/>
     </div>
   );
 }
