@@ -1,5 +1,5 @@
 import React from "react";
-import { Component } from "react";
+
 class MyMethod extends React.Component{
     greeting =(s1,s2,s3)=>{
         window.alert(`hello ${s1},${s2},${s3}`);

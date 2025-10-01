@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import MyPureComp from "./MyPureComp";
 class StateCompo extends Component{
     constructor(){
         super();
@@ -10,9 +10,12 @@ class StateCompo extends Component{
         
     };
     changeState=()=>{
-            this.setState({empName:"om",empsal:this.state.empsal+10000});
+      
+            this.setState({empName:"om jadhav",empsal:this.state.empsal+10000});
         };
     render(){
+        console.log("Class component");
+        
         const{empName,empsal}=this.state;
         return (
             <div>
@@ -20,7 +23,9 @@ class StateCompo extends Component{
                 <p>
                     Name:{empName} and salary:{empsal}
                 </p>
+
                 <button type="button" onClick={()=>this.changeState()}>Change State Data</button>
+                <MyPureComp empname={empName}></MyPureComp>
             </div>
         )
     };
